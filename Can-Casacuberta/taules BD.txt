@@ -1,0 +1,7 @@
+CREATE TABLE biblioteca (     ID_Llibre INT AUTO_INCREMENT PRIMARY KEY,
+   titol VARCHAR(255) NOT NULL,     autor VARCHAR(255) NOT NULL,     ISBN VARCHAR(13) NOT NULL,     editorial VARCHAR(255) NOT NULL,     any_publicacio INT NOT
+NULL,     categoria VARCHAR(255) NOT NULL,     Estat VARCHAR(255) NOT NULL );
+
+create table Prestecs(ID_Prestec int auto_increment primary key, ID_Llibre int(10), ID_Usuari int(10), Data_Prestec varchar(50), Data_Retorn_Prevista varchar(50), Data_Retorn_Real Varchar(50), Estat varchar (10), Multa Double);
+
+create table Usuaris(ID_Usuari int auto_increment primary key, Nom varchar(20), Cognoms varchar(50), Contrasenya varchar (30), Email varchar(50), Telefon int(12), Rol varchar (20), Data_Registre varchar(30));
